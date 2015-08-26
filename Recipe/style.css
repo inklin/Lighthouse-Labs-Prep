@@ -1,0 +1,101 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #634125;
+}
+h2 {
+  font-size: 20px;
+  margin: 10px 0 0 0;
+}
+h3 {
+  text-transform: uppercase;
+  width: 610px;
+  text-align: left;
+  padding: 10px 20px;
+  color: #AED9F4;
+  font-size: 23px;
+  font-weight: 100;
+  background-color: #5B92B7;
+  transition: background-color 0.8s;
+}
+h3:hover {
+  background-color: #44789b;
+}
+p {
+  margin: 0 0 10px 0;
+}
+
+/* Main Photo */
+.main-photo {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  /* Crop Photo bottom */
+  object-fit: cover;
+  width: 450px;
+  height: 300px;
+  transition: all 1s;
+}
+/* Increase main photo size on hover */
+.main-photo:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
+}
+/* Text Only Link */
+.txt-only {
+  font-size: 15px;
+  color: #5B92B7;
+  text-decoration: underline;
+}
+.txt-only:hover {
+  cursor: pointer;
+}
+
+/* Sections */
+.section {
+  width: 650px;
+  margin: 0 auto;
+  padding: 0 0 25px 0;
+  background-color: rgba(0,0,0,0.1);
+  box-shadow: 1px 1px 3px #A1A1A1;
+}
+/* Ingredients Section*/
+.ingredients {
+  width: 650px;
+  text-align: left;
+}
+.ingredients li {
+  padding: 0;
+  display: inline-block;
+  width: 45%;
+  margin: 10px 0;
+  text-align: left;
+}
+.ingredients li:hover {
+  cursor: pointer;
+}
+.ingredients li.obtained {
+  text-decoration: line-through;
+}
+/* Directions Section */
+.directions {
+  list-style: none;
+  padding: 0;
+}
+.directions li {
+  padding: 15px 30px;
+  margin: 0 auto;
+  text-align: left;
+}
+.directions li:hover {
+  background-color: #5bb7ae;
+  cursor: pointer;
+}
+.directions li.current {
+  background-color: #5bb7ae;
+}
+.direction-img {
+  border-radius: 20px;
+  border: 1px solid #FFF;
+}
