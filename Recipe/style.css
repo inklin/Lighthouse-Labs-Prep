@@ -1,8 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   color: #634125;
+  /* Prevent highlighting of elements from clicks */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+h1 {
+  margin: 30px 0 20px 0;
 }
 h2 {
   font-size: 20px;
@@ -10,13 +25,16 @@ h2 {
 }
 h3 {
   text-transform: uppercase;
-  width: 610px;
+  width: 650px;
   text-align: left;
   padding: 10px 20px;
+  margin: 0 0 15px 0;
   color: #AED9F4;
   font-size: 23px;
-  font-weight: 100;
   background-color: #5B92B7;
+  font-style: italic;
+  -webkit-transition: background-color 0.8s;
+  -moz-transition: background-color 0.8s;
   transition: background-color 0.8s;
 }
 h3:hover {
@@ -30,16 +48,20 @@ p {
 .main-photo {
   -webkit-border-radius: 30px;
   border-radius: 30px;
-  /* Crop Photo bottom */
+  /* Crop photo */
   object-fit: cover;
   width: 450px;
   height: 300px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
   transition: all 1s;
 }
 /* Increase main photo size on hover */
 .main-photo:hover {
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
   transform: scale(1.05);
 }
 /* Text Only Link */
@@ -56,46 +78,49 @@ p {
 .section {
   width: 650px;
   margin: 0 auto;
-  padding: 0 0 25px 0;
-  background-color: rgba(0,0,0,0.1);
+  padding: 0 0 15px 0;
+  background-color: #DCDCDC;
   box-shadow: 1px 1px 3px #A1A1A1;
 }
+
 /* Ingredients Section*/
 .ingredients {
   width: 650px;
   text-align: left;
+  padding: 0 0 0 40px;
 }
 .ingredients li {
-  padding: 0;
   display: inline-block;
   width: 45%;
   margin: 10px 0;
-  text-align: left;
 }
 .ingredients li:hover {
   cursor: pointer;
 }
-.ingredients li.obtained {
+.ingredients li input {
+  margin: 0 10px 0 0;
+}
+.ingredients .obtained {
   text-decoration: line-through;
 }
+
 /* Directions Section */
 .directions {
   list-style-position: inside;
-  padding: 0;
 }
 .directions li {
   padding: 15px 30px;
-  margin: 0 auto;
   text-align: left;
 }
 .directions li:hover {
   background-color: #5bb7ae;
   cursor: pointer;
 }
-.directions li.current {
+.directions .current {
   background-color: #5bb7ae;
 }
 .direction-img {
+  -webkit-border-radius: 20px;
   border-radius: 20px;
   border: 1px solid #FFF;
 }

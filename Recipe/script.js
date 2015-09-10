@@ -6,10 +6,10 @@ $(document).ready(function(){
     var obtained = ingredient.hasClass('obtained');
     if (!obtained){
       ingredient.addClass('obtained');
-      ingredient.find("input").prop("checked", true);
+      ingredient.find('input').prop('checked', true);
     } else {
       ingredient.removeClass('obtained');
-      ingredient.find("input").prop("checked", false);
+      ingredient.find('input').prop('checked', false);
     }
   });
 
