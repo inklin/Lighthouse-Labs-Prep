@@ -1,7 +1,9 @@
 (1..100).each do |number|
 
   # fizz and buzz are booleans
+  # fizz returns true if number is divisible by 3
   fizz = number % 3 == 0
+  # buzz returns true if number is divisible by 5
   buzz = number % 5 == 0
   output = ""
 

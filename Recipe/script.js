@@ -16,7 +16,7 @@ $(document).ready(function(){
   // Show current step in directions
   $('.directions li').click(function(){
     var currentDirection = $(this);
-    $('.directions li.current').removeClass('current');
+    $('.directions .current').removeClass('current');
     currentDirection.addClass('current');
   });
 

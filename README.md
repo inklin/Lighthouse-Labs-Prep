@@ -1,3 +1,3 @@
 # Lighthouse-Labs-Prep
 
-Prep work for Lighthouse Labs Web Development Bootcamp. 
+Prep work for Lighthouse Labs November 2015 Web Development Bootcamp by Stacey Lin. 
