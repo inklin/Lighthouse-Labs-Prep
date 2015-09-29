@@ -20,17 +20,17 @@ $(document).ready(function(){
     currentDirection.addClass('current');
   });
 
-  // Hide all photos on click 
+  // Hide & show photos on click
+  // Toggle link text between Show Photos/Hide Photos
   var photosHidden = false;
   $('.txt-only').click(function(){
-    if (!photosHidden){
+   if (!photosHidden){
       $(this).text('Show Photos');
-      $('.img').hide();
       photosHidden = true;
     } else {
       $(this).text('Hide Photos');
-      $('.img').show();
       photosHidden = false;
     }
+    $('img').toggle();
   });
 });
