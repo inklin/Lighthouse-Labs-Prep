@@ -11,3 +11,14 @@ class Calculator
     number1 - number2
   end
 end
+
+# Create a new instance of Calculator and assign it to my_calculator
+my_calculator = Calculator.new()
+
+# From my_calculator, get the add function and call it with parameters 3 and 5
+# This returns 8
+my_calculator.add(3, 5)
+
+# From my_calculator, get the subtract function and call it with parameters 10 and 3
+# This returns 7
+my_calculator.subtract(10, 3)

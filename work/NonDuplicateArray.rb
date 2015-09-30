@@ -1,4 +1,4 @@
-# Using a Hash 
+# Method 1: Using a Hash 
 
 def non_duplicated_values(values)
   # create a new empty hash to note the values and number count
@@ -14,6 +14,7 @@ def non_duplicated_values(values)
   value_count.select { |key, count| count == 1 } .keys
 end
 
+# Method 2: Using the count method on the array
 
 # Using the count method to determine which values in the values array have a count of 1
 # This returns a new array containing all elements of the values array which are true for the given block
